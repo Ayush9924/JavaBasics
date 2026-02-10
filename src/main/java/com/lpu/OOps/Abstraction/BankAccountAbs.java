@@ -23,9 +23,9 @@ public abstract class BankAccountAbs {
         this.balance = 1000L;   // minimum balance
     }
 
-    abstract void deposit(long... amount);
+    abstract void deposit(long... amount);//abstract method
 
-    abstract void withdraw(long amount);
+    abstract void withdraw(long amount);//abstract method
 
     @Override
     public String toString() {

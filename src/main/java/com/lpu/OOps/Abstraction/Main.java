@@ -1,5 +1,7 @@
 package com.lpu.OOps.Abstraction;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -32,6 +34,22 @@ public class Main {
             }
         };
 
+        //interfaces
+        BankInterface bankInterface = new BankInterFaceImpl("ayush",10000,"HDFC98",5064331L,AccountType.SAVINGS);
+
+        BankInterface ac4 = new BankInterface() {
+            @Override
+            public void deposit(long... amount) {
+                System.out.println("depositing :" + Arrays.toString(amount));
+            }
+
+            @Override
+            public void withdraw(long amount) {
+                System.out.println("withdrawing :" + amount);
+            }
+        };
+        ac4.withdraw(1000);
+        ac4.deposit(500, 2000);
 
 
     }
