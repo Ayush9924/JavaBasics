@@ -1,2 +1,3 @@
 # JavaBasics
-working with java basics
+Working with java basics.
+
